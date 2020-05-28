@@ -17,9 +17,11 @@ import (
 )
 
 func main() {
+	var bodydata string
+
 	maxloops := 3
 	currentTime := time.Now() //get current time/date
-	bodydata := ""
+
 	for i := 0; i < maxloops; i++ {
 
 		strcurrentdate := currentTime.Format("01-02-2006") //reformat for URL format
@@ -47,15 +49,18 @@ func main() {
 	//fmt.Println(bodydata)
 	reader := csv.NewReader(strings.NewReader(bodydata))
 
-	//zero out all variables
-	usconfirmed := 0
-	usdeaths := 0
-	usrecovered := 0
-	region := ""
-	state := ""
-	confirmed := ""
-	deaths := ""
-	recovered := ""
+	// Initialize variables.
+	var (
+		usconfirmed,
+		usdeaths,
+		usrecovered int
+
+		region,
+		state,
+		confirmed,
+		deaths,
+		recovered string
+	)
 	data := [][]string{}
 
 	for {
