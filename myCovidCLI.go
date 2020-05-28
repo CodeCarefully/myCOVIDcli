@@ -77,20 +77,20 @@ func main() {
 			confirmed, err := strconv.Atoi(line[7]) //convert confirmed to int
 			if err != nil {
 				// handle error
-				fmt.Println(err)
+				fmt.Fprintln(os.Stderr, err)
 				os.Exit(2)
 			}
 			deaths, err := strconv.Atoi(line[8]) //convert deaths to int
 			if err != nil {
 				// handle error
-				fmt.Println(err)
+				fmt.Fprintln(os.Stderr, err)
 				os.Exit(2)
 			}
 
 			recovered, err := strconv.Atoi(line[9]) //convert recovered to int
 			if err != nil {
 				// handle error
-				fmt.Println(err)
+				fmt.Fprintln(os.Stderr, err)
 				os.Exit(2)
 			}
 
