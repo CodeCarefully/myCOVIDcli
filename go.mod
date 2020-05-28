@@ -1,4 +1,4 @@
-module git.tilde.institute/knezzle/mycovidcli
+module git.tilde.institute/kneezle/mycovidcli
 
 go 1.13
 
