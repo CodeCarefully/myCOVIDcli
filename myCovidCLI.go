@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"git.tilde.institute/kneezle/myCOVIDcli/renderfloat"
+	"git.tilde.institute/kneezle/mycovidcli/renderfloat"
 	"github.com/olekukonko/tablewriter"
 )
 
