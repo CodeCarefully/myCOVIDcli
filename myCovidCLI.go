@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
+	"git.tilde.institute/kneezle/myCOVIDcli/renderfloat"
 	"github.com/olekukonko/tablewriter"
-	"myCOVIDcli/renderfloat"
 )
 
 func main() {
